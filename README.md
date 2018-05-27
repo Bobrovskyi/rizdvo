@@ -1,5 +1,3 @@
-![alt text](https://rizdvo.com.ua//img/logo.svg "Rizdvo")
-
 # Разработка темы для магазина Rizdvo
 
 Шаблон разработан для CMS Prestashop __1.6__
@@ -9,3 +7,5 @@
 * Pug
 * Sass
 * Gulp
+
+![alt text](https://rizdvo.com.ua//img/logo.svg "Rizdvo")
