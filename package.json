@@ -1,0 +1,34 @@
+{
+  "name": "rizdvo.com.ua_",
+  "version": "2.0.0",
+  "description": "Theme for Prestashop 1.6 Rizdvo",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bobrovskyi/rizdvo.git"
+  },
+  "author": "Bobrovskyi Dmytro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bobrovskyi/rizdvo/issues"
+  },
+  "homepage": "https://github.com/Bobrovskyi/rizdvo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pngquant": "^1.0.12",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sftp": "^0.1.5",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp.spritesmith": "^6.9.0",
+    "rimraf": "^2.6.2"
+  }
+}
