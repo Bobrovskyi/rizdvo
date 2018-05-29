@@ -1,0 +1,14 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+@import "global/fonts.scss";
+@import "global/vars.scss";
+@import "global/common.scss";
+@import "global/base.scss";
+@import "global/sprite.scss";
+@import "sections/header.scss";
+@import "sections/footer.scss";
+
+body {
+	font-family: $ff-main;
+	font-size: 1rem;
+	line-height: 1.2;
+}

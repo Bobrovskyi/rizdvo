@@ -21,7 +21,7 @@ gulp.task('server', function() {
     browserSync.init({
         server: {
         	port: 9000,
-            baseDir: "build"
+          baseDir: "build"
         }
     });
 
@@ -60,7 +60,7 @@ gulp.task('img:compile', function() {
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
+            svgoPlugins: [{removeViewBox: true}],
             use: [gulpPngquant()]
         })))
         .pipe(gulp.dest('build/img'));
@@ -111,19 +111,20 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 gulp.task('watch', function() {
 	gulp.watch('_dev/templates/**/*.pug', gulp.series('templates:compile'));
 	gulp.watch('_dev/sass/**/*.scss', gulp.series('styles:compile'));
+  gulp.watch('_dev/img/**.*', gulp.series('copy:images'));
 });
 
 // ----- UPLOAD -----
 
-gulp.task('upload', function () {
-    return gulp.src('build/**/*.*')
-        .pipe(sftp({
-            host: 'presta-f.kl.com.ua',
-            user: 'dimabo',
-            pass: 'x\A%:W9($n>#5X5c',
-            remotePath: '/presta-f.kl.com.ua/'
-        }));
-});
+// gulp.task('upload', function () {
+//     return gulp.src('build/**/*.*')
+//         .pipe(sftp({
+//             host: 'presta-f.kl.com.ua',
+//             user: 'dimabo',
+//             pass: 'x\A%:W9($n>#5X5c',
+//             remotePath: '/presta-f.kl.com.ua/'
+//         }));
+// });
 
 // ----- DEFAULT -----
 
@@ -131,6 +132,5 @@ gulp.task('default', gulp.series(
 	'clean',
 	gulp.parallel('templates:compile', 'styles:compile', 'img:compile', 'sprite', 'copy'),
 	gulp.parallel('watch', 'server')
-	),
-	'upload'
+	)
 );

@@ -30,5 +30,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp.spritesmith": "^6.9.0",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
   }
 }

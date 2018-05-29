@@ -1,0 +1,82 @@
+header.header
+    .container
+        .header-top
+
+            .header-top-left
+
+                .header-links
+                    ul.header-links__list
+                        - var values = ['Распродажа', 'Обмен и возврат', 'Сотрудничество', 'О Нас'];
+                            each val in values
+                                li.header-links__item
+                                    a.header-links__link(href="#")= val
+
+            .header-top-right
+
+                .header-contacts
+                    a.header-contacts__link(href="tel:+380679858500") +38&nbsp;(067)&nbsp;985&ndash;85&ndash;00
+                    ul.header-contacts__list
+                        li.header-contacts__item
+                            a.header-contacts__link(href="tel:+380679858500") +38&nbsp;(067)&nbsp;985&ndash;85&ndash;00
+                        li.header-contacts__item
+                            a.header-contacts__link(href="tel:+380509125257") +38&nbsp;(050)&nbsp;912&ndash;52&ndash;57
+
+                .languages
+                    ul.languages__list
+                        li.languages__item
+                            a.languages__link(href="#")
+                                img(src="img/ru.svg" alt="" width="30" height="30")
+                        li.header-contacts__item
+                            a.languages__link(href="#")
+                                img(src="img/ua.svg" alt="" width="30" height="30")
+
+                .user-info
+                    a.user-info__link(href="#")
+                        img(src="img/user.svg", alt="" width="40")
+
+                .cart
+                    img(src="img/giftbox.svg" alt="" width="60")
+
+    .header-center
+        .container
+            nav.nav
+                ul.nav__list
+                    li.nav__item
+                        a.nav__link Елки
+                        ul.nav__sublist
+                            li.nav__subitem
+                                a.nav__sublink Классика
+                            li.nav__subitem
+                                a.nav__sublink Литая Люкс
+                            li.nav__subitem
+                                a.nav__sublink Литая Премиум
+                            li.nav__subitem
+                                a.nav__sublink Литая Голубая Элит
+                    li.nav__item
+                        a.nav__link Сосны
+                    li.nav__item
+                        a.nav__link Уличные
+                    li.nav__item
+                        a.nav__link Аксессуары
+
+            .logo
+                a(href="#")
+                    img(src="img/logo.svg" alt="" width="260" height="240")
+                h1.logo__heading Интернет магазин искусственных елок
+
+            .header-menu
+                ul.header-menu__list
+                    li.header-menu__item
+                        a.header-menu__link Блог
+                    li.nav__item
+                        a.nav__link Доставка
+                    li.nav__item
+                        a.nav__link Контакты
+
+    .header-bottom
+        .container
+            .search
+                form(action="#" class="search__form")
+                    input(type="search" class="search__input" placeholder="Поиск")
+                    button(type="submit" class="search__btn")
+                        img(src="img/search.svg", alt="" width="20")
