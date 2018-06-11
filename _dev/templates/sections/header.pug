@@ -1,8 +1,9 @@
 header.header
+    //- canvas#snowfall
     .container
-        .header-top
+        .header__top
 
-            .header-top-left
+            .header__top-left
 
                 .header-links
                     ul.header-links__list
@@ -11,24 +12,32 @@ header.header
                                 li.header-links__item
                                     a.header-links__link(href="#")= val
 
-            .header-top-right
+            .header__top-right
 
                 .header-contacts
                     a.header-contacts__link(href="tel:+380679858500") +38&nbsp;(067)&nbsp;985&ndash;85&ndash;00
                     ul.header-contacts__list
                         li.header-contacts__item
-                            a.header-contacts__link(href="tel:+380679858500") +38&nbsp;(067)&nbsp;985&ndash;85&ndash;00
+                            a.header-contacts__link(href="tel:+380679858500")
+                                img.header-contacts__icon(src="img/ks_logo.svg" width="30" height="30" alt="")
+                                | +38&nbsp;(067)&nbsp;985&ndash;85&ndash;00
                         li.header-contacts__item
-                            a.header-contacts__link(href="tel:+380509125257") +38&nbsp;(050)&nbsp;912&ndash;52&ndash;57
+                            a.header-contacts__link(href="tel:+380509125257")
+                                img.header-contacts__icon(src="img/vodafone_logo.svg" width="30" height="30" alt="")
+                                | +38&nbsp;(050)&nbsp;912&ndash;52&ndash;57
+                        li.header-contacts__item
+                            p.work-hours
+                                | с&nbsp;8:00 до&nbsp;20:00 (Пн&ndash;Пт) <br>
+                                | с&nbsp;9:00 до&nbsp;15:00 (СБ&ndash;Вс)
 
                 .languages
                     ul.languages__list
+                        li.languages__item.selected
+                            a.languages__link(href="#")
+                                img.languages__flag(src="img/ru.svg" alt="" width="30" height="30")
                         li.languages__item
                             a.languages__link(href="#")
-                                img(src="img/ru.svg" alt="" width="30" height="30")
-                        li.header-contacts__item
-                            a.languages__link(href="#")
-                                img(src="img/ua.svg" alt="" width="30" height="30")
+                                img.languages__flag(src="img/ua.svg" alt="" width="30" height="30")
 
                 .user-info
                     a.user-info__link(href="#")
@@ -37,46 +46,49 @@ header.header
                 .cart
                     img(src="img/giftbox.svg" alt="" width="60")
 
-    .header-center
+    .header__center
         .container
-            nav.nav
-                ul.nav__list
-                    li.nav__item
-                        a.nav__link Елки
-                        ul.nav__sublist
-                            li.nav__subitem
-                                a.nav__sublink Классика
-                            li.nav__subitem
-                                a.nav__sublink Литая Люкс
-                            li.nav__subitem
-                                a.nav__sublink Литая Премиум
-                            li.nav__subitem
-                                a.nav__sublink Литая Голубая Элит
-                    li.nav__item
-                        a.nav__link Сосны
-                    li.nav__item
-                        a.nav__link Уличные
-                    li.nav__item
-                        a.nav__link Аксессуары
+            .header__center-inner
+                nav.nav
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#") Елки
+                            ul.nav__sublist
+                                li.nav__subitem
+                                    a.nav__sublink(href="#") Классика
+                                li.nav__subitem
+                                    a.nav__sublink(href="#") Литая Люкс
+                                li.nav__subitem
+                                    a.nav__sublink(href="#") Литая Премиум
+                                li.nav__subitem
+                                    a.nav__sublink(href="#") Литая Голубая Элит
+                        li.nav__item
+                            a.nav__link(href="#") Сосны
+                        li.nav__item
+                            a.nav__link(href="#") Уличные
+                        li.nav__item
+                            a.nav__link(href="#") Аксессуары
 
-            .logo
-                a(href="#")
-                    img(src="img/logo.svg" alt="" width="260" height="240")
-                h1.logo__heading Интернет магазин искусственных елок
+                .logo
+                    a.logo__link(href="#")
+                        img(src="img/logo.svg" alt="" width="260" height="240")
+                        h1.logo__heading
+                            | Интернет магазин
+                            <br>
+                            | искусственных елок
 
-            .header-menu
-                ul.header-menu__list
-                    li.header-menu__item
-                        a.header-menu__link Блог
-                    li.nav__item
-                        a.nav__link Доставка
-                    li.nav__item
-                        a.nav__link Контакты
+                .header-menu
+                    ul.header-menu__list
+                        li.header-menu__item
+                            a.header-menu__link(href="#") Блог
+                        li.header-menu__item
+                            a.header-menu__link(href="#") Доставка
+                        li.header-menu__item
+                            a.header-menu__link(href="#") Контакты
 
-    .header-bottom
+    .header__bottom
         .container
             .search
                 form(action="#" class="search__form")
                     input(type="search" class="search__input" placeholder="Поиск")
-                    button(type="submit" class="search__btn")
-                        img(src="img/search.svg", alt="" width="20")
+                    button(type="submit" class="search__btn"): i.fa.fa-search(aria-hidden="true")

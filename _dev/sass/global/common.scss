@@ -3,3 +3,22 @@
 p {
 	font: normal 1rem/1.2 $ff-main, cursive;
 }
+
+a {
+	text-decoration: none;
+	transition: 0.2s ease-in;
+}
+
+.container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@mixin unstyled-list() {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
