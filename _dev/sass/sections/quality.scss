@@ -1,0 +1,62 @@
+.quality {
+
+	padding: 50px 0;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	background: url(http://www.pngmart.com/files/5/Snow-PNG-Photo.png) repeat left top, radial-gradient(rgb(223, 233, 243), rgb(255, 255, 255));
+
+	&__heading {
+		@include ribbon-heading;
+
+		min-height: 80px;
+		margin: 0 0 30px;
+		padding: 5px 0;
+		font: normal 2.5rem/1.3 $ff-heading;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+	}
+
+	&__list {
+		@include unstyled-list;
+		@include flex-list;
+		padding: 50px 0;
+
+		background: url(../img/christmas_tree.png) no-repeat center/35%;
+	}
+
+	&__item {
+		@include flex-item-row(2);
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		padding: 40px 15px;
+
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+		&:nth-child(even) .quality__title {
+			margin-right: 30px;
+			text-align: right;
+		}
+		&:nth-child(odd) .quality__title {
+			margin-left: 30px;
+		}
+		&:nth-child(1),
+		&:nth-child(5) {
+			padding-left: 100px;
+		}
+		&:nth-child(2),
+		&:nth-child(6) {
+			padding-right: 100px;
+		}
+	}
+
+	&__title {
+		max-width: 170px;
+		font: normal 1.375rem/1.2 "Lobster",Arial,sans-serif;
+		color: #398876;
+	}
+
+}

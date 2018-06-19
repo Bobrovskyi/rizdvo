@@ -1,0 +1,77 @@
+.bestsell {
+
+	padding: 50px 0;
+	background: green;
+	background: url(https://rizdvo.com.ua/themes/default-bootstrap/img/green-bg.jpg) repeat left top;
+
+	&__heading {
+		@include ribbon-heading;
+
+		min-height: 80px;
+		margin: 0 0 30px;
+		padding: 5px 0;
+		font: normal 2.5rem/1.3 $ff-heading;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+	}
+
+	&__list {
+		@include unstyled-list;
+		@include flex-list;
+		justify-content: center;
+	}
+
+	&__item {
+		@include flex-item-row(4);
+
+		position: relative;
+		min-height: 300px;
+
+		&:nth-child(1) .bestsell__cover {
+			background: url(../img/bests-1.png) no-repeat center/contain;
+		}
+		&:nth-child(2) .bestsell__cover {
+			background: url(../img/bests-2.png) no-repeat center/contain;
+		}
+		&:nth-child(3) .bestsell__cover {
+			background: url(../img/bests-3.png) no-repeat center/contain;
+		}
+		&:nth-child(4) .bestsell__cover {
+			background: url(../img/bests-4.png) no-repeat center/contain;
+		}
+		&:nth-child(5) .bestsell__cover {
+			background: url(../img/bests-5.png) no-repeat center/contain;
+		}
+		&:nth-child(6) .bestsell__cover {
+			background: url(../img/bests-6.png) no-repeat center/contain;
+		}
+		&:nth-child(7) .bestsell__cover {
+			background: url(../img/bests-7.png) no-repeat center/contain;
+		}
+	}
+
+	&__cover {
+		height: 100%;
+	}
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
+		z-index: 1;
+		height: 100%;
+		font: normal 1.5rem/1.3 $ff-main;
+		color: #fff;
+		text-align: center;
+	}
+
+	&__title {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 50px;
+	}
+
+}

@@ -1,5 +1,28 @@
 // Styles for main tags
 
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 28px;
+	font-family: $ff-main-bold;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: $ff-main-bold;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
 p {
 	font: normal 1rem/1.2 $ff-main, cursive;
 }
@@ -17,8 +40,37 @@ a {
 	padding-right: 15px;
 }
 
+.container {
+	padding: 0;
+}
+
 @mixin unstyled-list() {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+@mixin flex-list() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 0 -15px;
+}
+
+@mixin flex-item-row($item_in_row) {
+	flex-basis: auto;
+	width: 100% / $item_in_row;
+	padding: 0 15px;
+}
+
+@mixin ribbon-heading() {
+	background: url(../img/heading_ribbon.svg) no-repeat center/contain;
+}
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
 }

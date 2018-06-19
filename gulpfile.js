@@ -3,9 +3,10 @@
 const gulp         = require('gulp');
 const pug          = require('gulp-pug');
 const sass         = require('gulp-sass');
+const ftp          = require( 'vinyl-ftp' );
+const gutil        = require( 'gulp-util' );
 const rename       = require("gulp-rename");
-const rimraf       = require('rimraf')
-const sftp         = require('gulp-sftp');
+const rimraf       = require('rimraf');
 const cache        = require('gulp-cache');
 const imagemin     = require('gulp-imagemin');
 const gulpPngquant = require('gulp-pngquant');
@@ -116,15 +117,23 @@ gulp.task('watch', function() {
 
 // ----- UPLOAD -----
 
-// gulp.task('upload', function () {
-//     return gulp.src('build/**/*.*')
-//         .pipe(sftp({
-//             host: 'presta-f.kl.com.ua',
-//             user: 'dimabo',
-//             pass: 'x\A%:W9($n>#5X5c',
-//             remotePath: '/presta-f.kl.com.ua/'
-//         }));
-// });
+gulp.task( 'deploy', function () {
+    var conn = ftp.create( {
+        host:     'silverso.ftp.tools',
+        user:     'silverso_dev',
+        password: 'in18lt94',
+        parallel: 10,
+        log:      gutil.log
+    } );
+
+    var globs = [
+        'build/**/**/*.*'
+    ];
+
+    return gulp.src( globs, { base: 'build/', buffer: false } )
+        .pipe( conn.newer( '' ) )
+        .pipe( conn.dest( '' ) );
+} );
 
 // ----- DEFAULT -----
 

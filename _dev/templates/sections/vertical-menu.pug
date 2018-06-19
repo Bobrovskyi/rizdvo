@@ -1,0 +1,7 @@
+.vertical-menu
+    .vertical-menu__heading Категории
+    ul.vertical-menu__list
+        - var values = ['Литые', 'Голубые', 'Пушистые', 'Маленькие 45-90 см', 'Комнатные 120-180 см', 'Большие 250 - 500 см', 'Эконом класс', 'Стандарт класс', 'Премиум класс'];
+            each val in values
+                li.vertical-menu__item
+                    a.vertical-menu__link(href="#")= val

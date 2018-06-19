@@ -1,7 +1,5 @@
 .footer {
 
-	background: linear-gradient(135deg, #58050b 0%,#bd1723 51%,#58050b 100%);
-
 	&__top {
 		padding: 10px 0;
 		background-color: #005f27;
@@ -26,11 +24,12 @@
 
 	&__middle {
 
+		padding-top: 30px;
+
 		&-inner {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			padding: 30px 0;
 		}
 	}
 
@@ -50,6 +49,7 @@
 	}
 
 	&__heading {
+		margin: 0 0 20px;
 		font: normal 1.875rem/1.3 $ff-heading;
 		color: #f7e2df;
 		text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
@@ -78,6 +78,7 @@
 	&__contacts {
 		flex-basis: auto;
 		width: 25%;
+		padding: 20px;
 	}
 
 	&__bottom p {
@@ -90,28 +91,42 @@
 
 	&__form {
 		position: relative;
-		display: inline-block;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 
 	&__label {
 		margin-right: 15px;
-		font: normal 1.375rem/1 $ff-heading;
+		font: normal 1.75rem/1 $ff-heading;
 		color: #f7e2df;
 		text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
 	}
 
 	&__input {
 		box-sizing: content-box;
-		height: 30px;
-		width: 245px;
-		padding: 0 30px 0 10px;
-		color: #f7e2df;
+		height: 40px;
+		width: 280px;
+		padding: 0 40px 0 10px;
+		color: #fff;
 		border: 1px solid #fff;
 		outline: none;
 		background-color: rgba(255, 255, 255, 0.2);
+		transition: 0.3s ease-in;
+
+		@include placeholder {
+			color: rgba(255, 255, 255, 0.8);
+		    text-indent: 0px;
+		    transition: text-indent 0.4s linear;
+		};
 
 		&:focus {
 			border-color: #1a8954;
+
+		    @include placeholder {
+		    	text-indent: 500px;
+		    }
+
 		}
 	}
 
@@ -120,9 +135,9 @@
 		top: 1px;
 		right: 1px;
 		z-index: 1;
-		height: 30px;
-		width: 30px;
-		font-size: 1.125rem;
+		height: 40px;
+		width: 40px;
+		font-size: 1.5rem;
 		color: #f7e2df;
 		border: 1px solid transparent;
 		outline: none;
@@ -168,11 +183,19 @@
 	display: inline-block;
 	width: 50%;
 	text-align: right;
+
+	&__link {
+		color: #f7e2df;
+	}
 }
 
 .work-hours {
 	position: relative;
-	padding-left: 40px;
+	margin: 0 0 20px;
+	padding-top: 40px;
+	padding-left: 50px;
+	font: normal 0.875rem/1.3 $ff-main;
+    color: #f7e2df;
 
 	&:before {
 		content: url(../img/clock_circular.svg);
@@ -183,26 +206,33 @@
 }
 
 .address {
-	&__mail-link {
+
+	&__mail-link,
+	&__office {
 		position: relative;
-		padding-left: 40px;
+		display: block;
+		margin: 0 0 20px;
+		padding-left: 50px;
+		font: normal 0.875rem/1.3 $ff-main;
+    	color: #f7e2df;
 
 		&:before {
 			content: url(../img/email_envelope.svg);
 			position: absolute;
+			top: 50%;
 			left: 0;
 			display: inline-block;
+			transform: translateY(-50%);
 		}
+
+		&:hover {
+    		color: #fff;
+    	}
+
 	}
 	&__office {
-		position: relative;
-		padding-left: 40px;
-
 		&:before {
 			content: url(../img/map_point.svg);
-			position: absolute;
-			left: 0;
-			display: inline-block;
 		}
 	}
 }
@@ -211,4 +241,6 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
+    width: 100%;
 }

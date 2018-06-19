@@ -1,3 +1,22 @@
+// Review Animation
+
+$('.reviews__item').first().addClass('active');
+$('.reviews__item').mouseover( function() {
+    $('.reviews__item').removeClass('active');
+    $(this).addClass('active');
+});
+
+// homepage-slider__list
+
+$('.homepage-slider__list').owlCarousel({
+	loop:true,
+    margin:10,
+    nav:true,
+    items:1
+});
+
+// Snowfall Canvas
+
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
     function(callback) {
@@ -114,3 +133,9 @@ window.addEventListener("resize",function(){
 })
 
 init();
+
+
+// $(".hits__list").hover3d({
+//   selector: ".hits__item",
+//   shine: true,
+// });

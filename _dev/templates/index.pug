@@ -6,9 +6,30 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     title Rizdvo
     link(rel="stylesheet" href="css/main.min.css")
+    link(rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css")
+    link(rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css")
   body
     include sections/header
 
-    main
+    main.home
+
+        .home__top
+            .container
+                .home__top-inner
+                    .home__top-left
+                        include sections/vertical-menu
+                    .home__top-right
+                        include sections/homepage-slider
+
+        include sections/advantages
+        include sections/hits
+        include sections/bestsell
+        include sections/quality
+        include sections/reviews
+        include sections/about-store
 
     include sections/footer
+
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    script(src="js/owlcarousel/owl.carousel.min.js")
+    script(src="js/common.js")
