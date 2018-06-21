@@ -32,7 +32,13 @@ gulp.task('server', function() {
 // ----- PUG -----
 
 gulp.task('templates:compile', function buildHTML() {
-  return gulp.src('_dev/templates/index.pug')
+  return gulp.src([
+    '_dev/templates/index.pug',
+    '_dev/templates/category.pug',
+    '_dev/templates/product.pug',
+    '_dev/templates/blog.pug',
+    '_dev/templates/blog-post.pug'
+  ])
   .pipe(pug({
     pretty: true
   }))

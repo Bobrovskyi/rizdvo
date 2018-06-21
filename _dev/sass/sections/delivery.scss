@@ -1,0 +1,36 @@
+.delivery {
+	flex-basis: auto;
+	width: 50%;
+	padding: 25px 10px;
+
+	&__title {
+		margin: 0;
+		padding-bottom: 10px;
+		font: normal 1rem/1.3 $ff-main-bold;
+		color: #333;
+
+		.fa {
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 1rem;
+			color: rgba(234, 38, 36, 1);
+			vertical-align: top;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 10px 10px 25px 30px;
+		list-style-type: square;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+
+	&__item {
+		padding-bottom: 10px;
+		font: normal 0.875rem/1.5 $ff-main-light;
+		color: #777;
+	}
+}

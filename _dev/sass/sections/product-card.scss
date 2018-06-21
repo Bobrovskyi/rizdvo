@@ -1,0 +1,83 @@
+.product-card {
+
+	position: relative;
+	padding: 20px 15px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 14px 33px rgba(0,0,0,0.30), 0 10px 7px rgba(0,0,0,0.22);
+	overflow: hidden;
+	transition: 0.4s ease;
+
+	&:hover {
+		box-shadow: 0 19px 37px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.32);
+		overflow: visible;
+
+		.product-card__features {
+			opacity: 1;
+		}
+	}
+
+	&__image {
+		padding: 10px 0;
+
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	&__title {
+		display: block;
+		margin: 0 auto;
+		padding: 10px 0;
+		font: normal 1rem/1.3 $ff-main;
+		color: #3a3939;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	&__price {
+		margin: 0;
+		padding: 10px 0;
+		font: normal 1.25rem/1.3 $ff-main-bold;
+		color: #333;
+		text-align: center;
+	}
+
+	&__features {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 3;
+		margin-top: -10px;
+		border-radius: 0 0 10px 10px;
+		background: #fff;
+		box-shadow: 0 19px 37px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.32);
+		opacity: 0;
+
+		&-list {
+			@include unstyled-list;
+			padding: 15px;
+		}
+
+		&-option {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin: 0;
+			padding: 5px 0;
+		}
+
+		&-title {
+			font: normal 0.875rem/1.3 $ff-main-light;
+			color: #333;
+		}
+
+		&-value {
+			font: normal 0.875rem/1.3 $ff-main-bold;
+			color: #333;
+		}
+	}
+}

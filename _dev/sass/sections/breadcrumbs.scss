@@ -1,0 +1,40 @@
+.breadcrumbs {
+	&__list {
+		@include unstyled-list;
+	}
+	&__item {
+		display: inline-block;
+		font: normal 0.875rem/1.3 $ff-main;
+		color: #fff;
+
+		& + &:before {
+			content: "\f105";
+			padding: 0 8px 0 5px;
+			font-family: "FontAwesome";
+
+		}
+	}
+	&__link {
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			display: inline-block;
+			height: 1px;
+			width: 0;
+			background-color: #fff;
+			transition: 0.3s ease-in;
+		}
+
+		&:hover {
+			&:after {
+				width: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+.filtered-page
+    ul.filtered-page__list
+        - var values = ['Литые елки', 'Пушистые елки', 'Маленькие елки', 'Комнатные елки', 'Большие елки'];
+            each val in values
+                li.filtered-page__item
+                    a(href="#" class="filtered-page__link")= val

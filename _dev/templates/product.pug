@@ -1,0 +1,127 @@
+include sections/header
+
+main.product
+    .container
+        .product__inner
+            .product__images
+                ul.product__images-list
+                    li.product__images-item.product__images-item--active
+                        img(src="https://rizdvo.com.ua/1442-cart_default/elka-klassika-180.jpg", alt="")
+                    li.product__images-item
+                        img(src="https://rizdvo.com.ua/1443-cart_default/elka-klassika-180.jpg", alt="")
+                    li.product__images-item
+                        img(src="#", alt="")
+                    li.product__images-item
+                        img(src="#", alt="")
+                    li.product__images-item
+                        img(src="#", alt="")
+                .product__images-cover
+                    img(src="https://rizdvo.com.ua/1443-thickbox_default/elka-klassika-180.jpg", alt="")
+            .product__info
+                h1.product__title Елка Литая Голубая Элит 150
+                .product__info-top-line
+                    p.product__available В наличии
+                    //- p.product__not-available Нет в наличии
+                    .product__rating
+                        img(src="https://www.backlinks.com/wp-content/uploads/2017/12/AdobeStock_91681081.jpeg", alt="" width="110")
+                    .product__reviews-panel
+                        | Отзывы (14)
+                        a(href="#")
+                    p.product__reference Код:
+                        span 000299
+                .product__info-top-line
+                    .product__price
+                        .product__price-current 860,00 Грн
+                    .product__add-to-cart
+                        button.btn.btn--red.btn--product В корзину
+
+                include sections/oneclickcheckout
+
+                .product__see-next
+                    a(href="#") Елка Литая Голубая Элит 180 см - 2640 грн.
+
+                include sections/warnings
+
+                .product__info-top-line
+                    .product__desc-short
+                        .product__desc-short-title
+                            i.fa.fa-hashtag(aria-hidden="true")
+                            | Короткое описание
+                        <ul>
+                            <li>Высота&nbsp;&mdash; 180&nbsp;см.</li>
+                            <li>Хвоя&nbsp;&mdash; пленка ПВХ.</li>
+                            <li>Пластиковая подставка в&nbsp;комплекте.</li>
+                            <li>Тип упаковки&nbsp;&mdash; картонная коробка.</li>
+                            <li>Коробка&nbsp;&mdash; 90&times;25&times;25&nbsp;см.</li>
+                            <li>Вес фактический&nbsp;&mdash; 8&nbsp;кг.</li>
+                        </ul>
+
+                    include sections/delivery
+
+        include sections/product-options
+
+        .product__inner
+            .product__descr
+                p.product__descr-subheading Описание
+                p.
+                    Хочется, чтобы в&nbsp;доме была настоящая сказочная елка? Тогда литая голубая идеально справится с&nbsp;этой задачей. А&nbsp;все потому, что эта ель имеет необыкновенно глубокий зимний цвет. Такой красавице будут рады и&nbsp;взрослые, и&nbsp;дети. Изящный вытянутый силуэт и&nbsp;пушистые веточки&nbsp;&mdash; такое деревце станет истинным украшением самого желанного праздника в&nbsp;году.
+                p.product__descr-subheading Характеристики
+                .product__data-sheet
+                    table.product__data-sheet-table
+                        tbody
+                            tr
+                                th Высота
+                                td 150см
+                            tr
+                                th Диаметр
+                                td 85см
+                            tr
+                                th Диаметр хвои
+                                td 4см
+                            tr
+                                th Материал хвои
+                                td Литой пластик
+                            tr
+                                th Цвет
+                                td Голубой
+            .product__reviews
+                p.product__descr-subheading Отзывы
+                h3.product__title.product__title--rewiews Елка Литая Голубая Элит 150
+                .product__rating.product__rating--main-reviews
+                        img(src="https://www.backlinks.com/wp-content/uploads/2017/12/AdobeStock_91681081.jpeg", alt="" width="110")
+                ul.product__reviews-list
+                    li.product__reviews-item
+                        .product__rating.product__rating--single-review
+                            img(src="https://www.backlinks.com/wp-content/uploads/2017/12/AdobeStock_91681081.jpeg", alt="" width="110")
+                        p.product__reviews-title СУПЕР
+                        p.product__reviews-comment Елка Класс!
+                    li.product__reviews-item
+                        .product__rating.product__rating--single-review
+                            img(src="https://www.backlinks.com/wp-content/uploads/2017/12/AdobeStock_91681081.jpeg", alt="" width="110")
+                        p.product__reviews-title ЕЛКА КЛАССИКА 180
+                        p.product__reviews-comment Большое спасибо за елочку! Все очень быстро: связались, доставили, оплатили - всего 3 дня! Радость детям и взрослым! Качеством остались довольны, правда когда открыли коробку иголочки были сжаты, ничего, распушили и все ОК, от распаковки до последней игрушки ушло 35-40 минут. Елочка выглядит очень натурально, описание соответствует реальности!
+                    li.product__reviews-item
+                        .product__rating.product__rating--single-review
+                            img(src="https://www.backlinks.com/wp-content/uploads/2017/12/AdobeStock_91681081.jpeg", alt="" width="110")
+                        p.product__reviews-title Елка красавица
+                        p.product__reviews-comment Вчера получили елочку, очень красивая.Покупкой остались довольны,рекомендуем.Спасибо сайту за работу!
+
+        .product__video
+            p.product__video-heading Видео
+            iframe.product__video-iframe(width="1140" height="600" src="https://www.youtube.com/embed/mPw_aw_Dwjs" allowfullscreen)
+
+        .product__current-category
+            p.product__current-category-title В этой категории 6 товаров:
+            ul.product__current-category-list
+                li.product__current-category-item
+                    include sections/product-card
+                li.product__current-category-item
+                    include sections/product-card
+                li.product__current-category-item
+                    include sections/product-card
+                li.product__current-category-item
+                    include sections/product-card
+                li.product__current-category-item
+                    include sections/product-card
+
+include sections/footer

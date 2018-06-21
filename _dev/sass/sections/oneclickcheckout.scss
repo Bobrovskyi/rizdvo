@@ -1,0 +1,16 @@
+.oneclickcheckout {
+	border: 2px dashed #1aa352;
+	padding: 10px 15px;
+
+	&__form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__input {
+		padding: 0 10px;
+		border: 1px solid #000;
+	}
+}

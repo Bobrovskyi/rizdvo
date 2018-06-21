@@ -1,0 +1,50 @@
+.category {
+
+	&__heading {
+		@include ribbon-heading-green;
+
+		min-height: 80px;
+		margin: 0 0 30px;
+		padding: 5px 0;
+		font: normal 2.5rem/1.3 $ff-heading;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+	}
+
+	&__cover {
+	    border-radius: 10px;
+	    overflow: hidden;
+
+	    img {
+	    	display: block;
+		    max-width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+	    }
+	}
+
+	&__description {
+
+		padding: 50px 0;
+
+		&-heading {
+			@include ribbon-heading;
+
+			min-height: 80px;
+			margin: 0 0 30px;
+			padding: 5px 0;
+			font: normal 2.5rem/1.3 $ff-heading;
+			color: #fff;
+			text-align: center;
+			text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+		}
+
+		&-inner {
+			padding: 20px 20px;
+			border: 2px solid #d2b467;
+			border-radius: 20px;
+			background: #fff;
+		}
+	}
+}

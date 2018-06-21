@@ -1,0 +1,382 @@
+.product {
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 20px 20px;
+	    border: 2px solid #d2b467;
+	    border-radius: 20px;
+	    background: #fff;
+	}
+
+	&__images {
+		flex-basis: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width: 45%;
+
+		&-list {
+			@include unstyled-list;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 0 30px 0 0;
+		}
+
+		&-item {
+			height: 70px;
+			width: 60px;
+			margin-bottom: 15px;
+			text-align: center;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			background: #f6f7f7;
+			cursor: pointer;
+			opacity: 0.5;
+			overflow: hidden;
+			transition: .3s ease-out;
+
+			&:hover,
+			&--active {
+				border-color: #1aa352;
+				opacity: 1;
+			}
+
+			img {
+				height: 100%;
+				max-width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&-cover {
+			width: 100%;
+
+			img {
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__info {
+		flex-basis: auto;
+		width: 55%;
+		padding-left: 30px;
+
+		&-top-line {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		padding-bottom: 20px;
+		font: normal 2rem/1.3 $ff-main-bold;
+
+		&--rewiews {
+			font-size: 1rem;
+			color: #777;
+			text-transform: uppercase;
+		}
+	}
+
+	&__available,
+	&__not-available {
+		display: inline-block;
+		margin: 0;
+		padding: 10px 15px;
+	    font: normal 0.75rem/1.2 $ff-main;
+	    color: #fff;
+	    text-shadow: 1px 2px 8px #ccc;
+	    vertical-align: middle;
+	    border-radius: 10px;
+
+	    &:before {
+	    	margin-right: 5px;
+	    	font-size: 0.875rem;
+	    	font-family: "FontAwesome";
+	    }
+	}
+
+	&__available {
+	    background: #1aa352;
+
+	    &:before {
+	    	content: "\f058";
+	    }
+	}
+
+	&__not-available {
+	    background: #a3311a;;
+
+	    &:before {
+	    	content: "\f057";
+	    }
+	}
+
+	&__reviews-panel {
+		display: inline-block;
+		font: normal 0.875rem/1.2 $ff-main;
+		color: #777;
+		vertical-align: middle;
+
+	    &:before {
+	    	content: "\f27b";
+	    	margin-right: 10px;
+	    	padding-right: 10px;
+	    	font-size: 1rem;
+	    	font-family: "FontAwesome";
+	    	color: #000;
+	    	border-right: 1px solid #1aa352;
+	    }
+	    &:after {
+	    	content: "\f040";
+	    	margin-left: 10px;
+	    	padding-left: 10px;
+	    	font-size: 1rem;
+	    	font-family: "FontAwesome";
+	    	color: #000;
+	    	border-left: 1px solid #1aa352;
+	    }
+	}
+
+	&__reference {
+		margin: 0;
+		display: inline-block;
+		font: normal 0.875rem/1.2 $ff-main;
+		color: #777;
+		vertical-align: top;
+
+		span {
+			margin-left: 5px;
+		}
+	}
+
+	&__price {
+		font: normal 2.5rem/1.3 $ff-heading;
+	    color: #333;
+	    white-space: nowrap;
+	}
+
+	&__add-to-cart {
+		padding: 0 15px;
+	}
+
+	&__see-next {
+		padding: 15px 0;
+
+		a {
+			display: block;
+			font: normal 1rem/1.3 $ff-main-bold;
+			color: #005f27;
+			text-decoration: underline;
+		}
+	}
+
+	&__desc-short {
+		flex-basis: auto;
+		align-self: flex-start;
+		width: 50%;
+		padding: 25px 10px;
+
+		&-title {
+			margin: 0;
+			padding-bottom: 10px;
+			font: normal 1rem/1.3 $ff-main-bold;
+			color: #333;
+
+			.fa {
+				display: inline-block;
+				margin-right: 10px;
+				font-size: 1rem;
+				color: rgba(234, 38, 36, 1);
+				vertical-align: top;
+			}
+		}
+
+		ul {
+			padding: 10px 10px 25px 30px;
+		}
+
+		li {
+			padding-bottom: 10px;
+		}
+	}
+
+	&__descr {
+		flex-basis: auto;
+		width: 50%;
+		padding-right: 20px;
+
+		p {
+			margin: 0 0 15px;
+			font: normal 1rem/1.5 $ff-main-light;
+			color: #333;
+		}
+
+		&-subheading,
+		.product__descr-subheading {
+			margin: 0 0 20px;
+			padding-bottom: 5px;
+			font: normal 2.25rem/1.2 $ff-heading;
+			color: #ea2624;
+			border-bottom: 1px solid #1aa352;
+		}
+
+	}
+
+	&__data-sheet {
+
+		&-table {
+			width: 100%;
+			border: 1px solid #eee;
+
+			tr {
+				transition: 0.3s linear;
+
+				&:nth-child(odd){
+					background: #fdfdfd;
+				}
+
+				&:hover {
+					background: #f8f8f8;
+				}
+			}
+
+			td,
+			th {
+				padding: 10px 15px;
+				text-align: left;
+				vertical-align: middle;
+				border: 1px solid #eee;
+			}
+
+			th {
+				font: normal 1rem/1.5 $ff-main-bold;
+				color: #333;
+			}
+
+			td {
+				font: normal 1rem/1.5 $ff-main-light;
+				color: #444;
+			}
+		}
+	}
+
+	&__reviews {
+		position: relative;
+		flex-basis: auto;
+		width: 50%;
+		padding-left: 20px;
+		border-left: 4px dotted #cecece;
+
+		&-list {
+			@include unstyled-list;
+			padding: 20px 0;
+			border-top: 4px double #eee;
+			border-bottom: 4px double #eee;
+		}
+
+		&-item {
+			border-bottom: 1px solid #eee;
+
+			&:first-child {
+
+				.product__rating--single-review {
+					padding-top: 0;
+				}
+			}
+
+			&:last-child {
+				border-bottom: none;
+
+				.product__reviews-comment {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		&-title {
+			margin: 0;
+			padding-bottom: 10px;
+			font: normal 1rem/1.3 $ff-main-bold;
+			color: #ea2624;
+			text-transform: uppercase;
+		}
+
+		&-comment {
+			margin: 0;
+			padding-bottom: 20px;
+			font: normal 0.875rem/1.5 $ff-main;
+		}
+	}
+
+	&__rating {
+
+		&--main-reviews {
+			position: absolute;
+			top: 8px;
+			right: 0;
+		}
+
+		&--single-review {
+			margin: 0;
+			padding: 20px 0 10px;
+		}
+	}
+
+	&__video {
+		padding: 30px 0;
+
+		&-heading {
+			@include ribbon-heading-green;
+
+			min-height: 80px;
+			margin: 0 0 30px;
+			padding: 5px 0;
+			font: normal 2.5rem/1.3 $ff-heading;
+			color: #fff;
+			text-align: center;
+			text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+		}
+
+		&-iframe {
+			max-width: 100%;
+			border: none;
+		}
+	}
+
+	&__current-category {
+
+		padding: 30px 0;
+
+		&-title {
+			margin: 0 0 20px;
+			font: normal 2.25rem/1.2 $ff-heading;
+			color: #fff;
+			text-shadow: 0px 2px 6px rgba(0,0,0,0.75);
+		}
+
+		&-list {
+			@include unstyled-list;
+			@include flex-list;
+			margin: 0 -5px;
+		}
+
+		&-item {
+			@include flex-item-row(5);
+			padding: 0 5px;
+		}
+	}
+}

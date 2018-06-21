@@ -42,6 +42,14 @@
 
 	&__bottom {
 		padding: 20px 0;
+
+		&-inner {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 }
 
@@ -337,8 +345,7 @@
 
 .search {
 
-	display: flex;
-	justify-content: flex-end;
+	margin-left: auto;
 
 	&__form {
 		position: relative;
