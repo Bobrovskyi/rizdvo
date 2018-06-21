@@ -1,0 +1,52 @@
+.category-card {
+
+	position: sticky;
+	top: 0;
+	margin: 0 0 30px;
+	padding: 20px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	border: 2px solid #d2b467;
+	border-radius: 15px;
+
+	&__title {
+		margin: 0 0 15px;
+		font: normal 1.75rem/1.2 $ff-heading;
+		color: #333;
+	}
+
+	&__list {
+		@include unstyled-list;
+	}
+
+	&__item {
+		padding: 10px 0;
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		padding-left: 15px;
+		font: normal 0.875rem/1.2 $ff-main;
+		color: #444;
+		transition: 0.4s ease;
+
+		&:before {
+			content: "\f105";
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: "FontAwesome";
+			transition: 0.4s ease;
+		}
+
+		&:hover {
+			color: #000;
+
+			&:before {
+				left: 3px;
+			}
+		}
+	}
+
+}

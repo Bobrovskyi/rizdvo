@@ -1,24 +1,12 @@
 include sections/header
 
-main.home
-
-    .home__top
-        .container
-            .home__top-inner
-                .home__top-left
-                    include sections/vertical-menu
-                .home__top-right
-                    include sections/homepage-slider
-
-    include sections/advantages
-    include sections/hits
-    include sections/bestsell
-    include sections/quality
-    include sections/reviews
-    include sections/about-store
+main.blog-post
+    .container
+        .blog__top
+            .blog__top-inner
+                .blog__top-left
+                    include sections/category-card
+                .blog__top-right
+                    include sections/post
 
 include sections/footer
-
-//- script(src="https://code.jquery.com/jquery-3.3.1.min.js")
-//- script(src="js/owlcarousel/owl.carousel.min.js")
-//- script(src="js/common.js")

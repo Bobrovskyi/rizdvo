@@ -1,0 +1,33 @@
+.blog-meta-panel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 20px 0 0;
+	padding: 5px;
+	font: normal 0.875rem/1.2 $ff-main-light;
+	color: #333;
+	border-radius: 15px;
+    background: #eee;
+
+    &__item {
+    	padding: 10px;
+    }
+
+    p,
+    a {
+    	margin: 0;
+		font: normal 0.875rem/1.2 $ff-main-light;
+		color: #333;
+    }
+
+    &--green {
+    	background: #005f27;
+    	color: #fff;
+
+    	p,
+    	a {
+    		color: #fff;
+    	}
+    }
+}
