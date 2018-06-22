@@ -1,0 +1,87 @@
+.authentication {
+	padding: 50px 0;
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		flex-basis: auto;
+		width: 49%;
+	    padding: 20px 20px;
+	    border: 2px solid #d2b467;
+	    border-radius: 20px;
+	    background: #fff;
+	    text-align: center;
+
+	}
+
+	&__subheading {
+		margin: 0 0 20px;
+		padding-bottom: 10px;
+		font: normal 1.75rem/1.2 $ff-heading;
+		color: #ea2624;
+		border-bottom: 1px solid #1aa352;
+	}
+
+	&__label {
+		margin: 0;
+		padding: 25px 0;
+		display: block;
+		font: normal 0.875rem/1.2 $ff-main-bold;
+		color: #333;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+	}
+
+	&__input {
+		height: 40px;
+		width: 80%;
+		min-width: 180px;
+		padding: 0 15px;
+		font: normal 0.8125rem/1.5 $ff-main-light;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+
+	&__text {
+		margin: 0;
+		padding: 25px 0;
+		font: normal 0.875rem/1.5 $ff-main-light;
+		color: #444;
+	}
+
+	&__lost-password {
+		margin: 0;
+		padding: 25px 0 0;
+		font: normal 1.125rem/1.2 $ff-main;
+
+		a {
+			color: #ea2624;
+			display: inline-block;
+			border-bottom: 1px solid #ea2624;
+
+			&:hover {
+				color: #1aa352;
+				letter-spacing: .03em;
+				border-color: #1aa352;
+			}
+		}
+	}
+
+}
+
+.password-recovery {
+	padding: 50px 0;
+
+	.authentication__form {
+		margin: 0 auto;
+	}
+}

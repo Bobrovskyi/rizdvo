@@ -149,6 +149,17 @@ li {
 		overflow: hidden;
 	}
 
+	&--auth {
+		height: 40px;
+		width: 80%;
+		margin-top: 25px;
+
+		i {
+			margin-right: 10px;
+			font-size: 1rem;
+		}
+	}
+
 	&--social {
 		padding: 5px 10px;
 		font: normal 0.75rem/1.2 $ff-main;

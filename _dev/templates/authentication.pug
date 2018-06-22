@@ -1,0 +1,31 @@
+include sections/header
+
+main.authentication
+    .container
+        p.main-heading.main-heading--green Авторизация
+        .authentication__inner
+            form.authentication__form(action="https://rizdvo.com.ua/authentication" method="post" id="create-account_form")
+                p.authentication__subheading Создание учетной записи
+                p.authentication__text Чтобы зарегистрироваться, укажите, пожалуйста, свой адрес электронной почты.
+                label.authentication__label(for="email_create") адрес E-mail
+                input.authentication__input(data-validate="isEmail" id="email_create" name="email_create" type="email" value="" placeholder="Введите ваш E-mail")
+                input(type="hidden" class="hidden" name="back" value="my-account")
+                button.btn.btn--green.btn--centered.btn--auth(type="submit" id="SubmitCreate" name="SubmitCreate")
+                    i.fa.fa-users(aria-hidden="true")
+                    | Создание учетной записи
+                input(type="hidden" class="hidden" name="SubmitCreate" value="Создание учетной записи")
+
+            form.authentication__form(action="https://rizdvo.com.ua/authentication" method="post" id="login_form")
+                p.authentication__subheading Уже зарегистрированы?
+                label.authentication__label(for="email") адрес E-mail
+                input.authentication__input(data-validate="isEmail" type="email" id="email" name="email" value="" placeholder="Введите ваш E-mail")
+                label.authentication__label(for="passwd") Пароль
+                input.authentication__input(type="password" data-validate="isPasswd" id="passwd" name="passwd" value="" placeholder="Введите ваш пароль")
+                p(class="authentication__lost-password")
+                    a(href="password-recovery.html" title="Восстановить пароль" rel="nofollow") Забыли пароль?
+                input(type="hidden" class="hidden" name="back" value="my-account")
+                button.btn.btn--green.btn--centered.btn--auth(type="submit" id="SubmitLogin" name="SubmitLogin")
+                    i.fa.fa-sign-in(aria-hidden="true")
+                    | Войти
+
+include sections/footer
