@@ -5,7 +5,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding: 20px 20px;
-	    border: 2px solid #d2b467;
+	    border: 2px solid $color-main-border;
 	    border-radius: 20px;
 	    background: #fff;
 	}
@@ -42,7 +42,7 @@
 
 			&:hover,
 			&--active {
-				border-color: #1aa352;
+				border-color: $color-green;
 				opacity: 1;
 			}
 
@@ -110,7 +110,7 @@
 	}
 
 	&__available {
-	    background: #1aa352;
+	    background: $color-green-main-light;
 
 	    &:before {
 	    	content: "\f058";
@@ -118,7 +118,7 @@
 	}
 
 	&__not-available {
-	    background: #a3311a;;
+	    background: $color-red;
 
 	    &:before {
 	    	content: "\f057";
@@ -138,7 +138,7 @@
 	    	font-size: 1rem;
 	    	font-family: "FontAwesome";
 	    	color: #000;
-	    	border-right: 1px solid #1aa352;
+	    	border-right: 1px solid $color-green;
 	    }
 	    &:after {
 	    	content: "\f040";
@@ -147,7 +147,7 @@
 	    	font-size: 1rem;
 	    	font-family: "FontAwesome";
 	    	color: #000;
-	    	border-left: 1px solid #1aa352;
+	    	border-left: 1px solid $color-green;
 	    }
 	}
 
@@ -165,7 +165,7 @@
 
 	&__price {
 		font: normal 2.5rem/1.3 $ff-heading;
-	    color: #333;
+	    color: $color-main-p;
 	    white-space: nowrap;
 	}
 
@@ -179,7 +179,7 @@
 		a {
 			display: block;
 			font: normal 1rem/1.3 $ff-main-bold;
-			color: #005f27;
+			color: $color-green;
 			text-decoration: underline;
 		}
 	}
@@ -194,7 +194,7 @@
 			margin: 0;
 			padding-bottom: 10px;
 			font: normal 1rem/1.3 $ff-main-bold;
-			color: #333;
+			color: $color-main-p;
 
 			.fa {
 				display: inline-block;
@@ -223,7 +223,7 @@
 		p {
 			margin: 0 0 15px;
 			font: normal 1rem/1.5 $ff-main-light;
-			color: #333;
+			color: $color-main-p;
 		}
 
 		&-subheading,
@@ -231,8 +231,8 @@
 			margin: 0 0 20px;
 			padding-bottom: 5px;
 			font: normal 2.25rem/1.2 $ff-heading;
-			color: #ea2624;
-			border-bottom: 1px solid #1aa352;
+			color: $color-red-main-light;
+			border-bottom: 1px solid $color-green-light;
 		}
 
 	}
@@ -265,7 +265,7 @@
 
 			th {
 				font: normal 1rem/1.5 $ff-main-bold;
-				color: #333;
+				color: $color-main-p;
 			}
 
 			td {
@@ -312,7 +312,7 @@
 			margin: 0;
 			padding-bottom: 10px;
 			font: normal 1rem/1.3 $ff-main-bold;
-			color: #ea2624;
+			color: $color-red-light;
 			text-transform: uppercase;
 		}
 

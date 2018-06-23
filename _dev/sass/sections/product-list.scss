@@ -1,0 +1,15 @@
+.product-list {
+	padding: 20px 0;
+
+    &__list {
+    	@include unstyled-list;
+    	@include flex-list;
+    }
+
+    &__item {
+    	@include flex-item-row(3);
+    	position: relative;
+    	padding: 15px;
+    }
+
+}

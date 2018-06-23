@@ -1,12 +1,24 @@
-include sections/header
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title Rizdvo
+    link(rel="stylesheet" href="css/main.min.css")
+    //- link(rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css")
+    //- link(rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css")
+  body
 
-main.blog-post
-    .container
-        .blog__top
-            .blog__top-inner
-                .blog__top-left
-                    include sections/category-card
-                .blog__top-right
-                    include sections/post
+    include sections/header
 
-include sections/footer
+    main.blog-post
+        .container
+            .blog__top
+                .blog__top-inner
+                    .blog__top-left
+                        include sections/category-card
+                    .blog__top-right
+                        include sections/post
+
+    include sections/footer

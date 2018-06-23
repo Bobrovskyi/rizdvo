@@ -1,24 +1,29 @@
-include sections/header
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title Rizdvo
+    link(rel="stylesheet" href="css/main.min.css")
+    //- link(rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css")
+    //- link(rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css")
+  body
 
-main.home
+    include sections/header
 
-    .home__top
-        .container
-            .home__top-inner
-                .home__top-left
-                    include sections/vertical-menu
-                .home__top-right
-                    include sections/homepage-slider
+    main.home
 
-    include sections/advantages
-    include sections/hits
-    include sections/bestsell
-    include sections/quality
-    include sections/reviews
-    include sections/about-store
+        include sections/homepage-slider
+        include sections/advantages
+        include sections/hits
+        include sections/bestsell
+        include sections/quality
+        include sections/reviews
+        include sections/about-store
 
-include sections/footer
+    include sections/footer
 
-//- script(src="https://code.jquery.com/jquery-3.3.1.min.js")
-//- script(src="js/owlcarousel/owl.carousel.min.js")
-//- script(src="js/common.js")
+    //- script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    //- script(src="js/owlcarousel/owl.carousel.min.js")
+    //- script(src="js/common.js")

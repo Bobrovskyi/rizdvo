@@ -20,7 +20,7 @@
 	&__center {
 		position: relative;
 		padding: 10px 0;
-		background-color: #005f27;
+		background-color: $color-green-main;
 
 		&:before,
 		&:after {
@@ -248,7 +248,7 @@
 		top: 30px;
 		z-index: 2;
 		display: none;
-		border: 2px solid #d2b467;
+		border: 2px solid $color-main-border;
 		border-radius: 10px;
 		background-color: #fff;
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -286,11 +286,11 @@
 		display: block;
 		padding: 15px 20px;
 		font: normal 1rem/1.3 $ff-main-bold;
-		color: #444;
+		color: $color-navy;
 
 		&:hover {
 			color: #fff;
-			background: #005f27;
+			background: $color-green-light;
 		}
 	}
 
@@ -370,7 +370,7 @@
 		};
 
 		&:focus {
-			border-color: #1a8954;
+			border-color: $color-green;
 
 		    @include placeholder {
 		    	text-indent: 500px;

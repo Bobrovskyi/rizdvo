@@ -1,0 +1,32 @@
+.cms {
+
+	padding: 0px 0 50px;
+
+	&__inner {
+		padding: 20px 20px;
+		border: 2px solid $color-main-border;
+		border-radius: 20px;
+		background: #fff;
+	}
+
+	&__heading {
+		margin: 0;
+		padding: 10px 0;
+		font: $cms-heading;
+		color: $color-navy;
+		color: $color-green-light;
+		text-align: center;
+	}
+
+	&__subheading {
+		margin: 0;
+		padding: 10px 0 15px;
+		font: $cms-subheading;
+		color: $color-red-light;
+	}
+
+	img {
+		display: block;
+		padding: 15px 0;
+	}
+}

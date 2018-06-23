@@ -4,7 +4,7 @@
 
     &__inner {
 		padding: 20px 20px;
-	    border: 2px solid #d2b467;
+	    border: 2px solid $color-main-border;
 	    border-radius: 20px;
 	    background: #fff;
     }
@@ -43,7 +43,7 @@
     		color: #777;
 
     		&:hover {
-    			color: #333;
+    			color: $color-main-p;
     		}
     	}
     }

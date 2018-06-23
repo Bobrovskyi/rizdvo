@@ -4,3 +4,26 @@ $ff-main: 'Comfortaa', Arial, sans-serif;
 $ff-main-bold: 'Comfortaabold', Arial, sans-serif;
 $ff-main-light: 'Comfortaalight', Arial, sans-serif;
 $ff-heading: 'Lobster', Arial, sans-serif;
+
+// Colors
+
+$color-red-main: #ce4e35;
+$color-red-main-light: #ea2624;
+$color-red: #CC231E;
+$color-red-light: #F5624D;
+
+$color-green-main: #005f27;
+$color-green-main-light: #1aa352;
+$color-green: #0F8A5F;
+$color-green-light: #34A65F;
+
+$color-navy: #235E6F;
+
+$color-main-p: #333;
+$color-secondary-p: #777;
+$color-main-border: #d2b467;
+
+// CMS
+
+$cms-heading: normal 2.25rem/1.2 $ff-heading;
+$cms-subheading: normal 1.25rem/1.2 $ff-main-bold;

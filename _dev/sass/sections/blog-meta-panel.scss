@@ -6,7 +6,7 @@
 	margin: 20px 0 0;
 	padding: 5px;
 	font: normal 0.875rem/1.2 $ff-main-light;
-	color: #333;
+	color: $color-main-p;
 	border-radius: 15px;
     background: #eee;
 
@@ -18,11 +18,11 @@
     a {
     	margin: 0;
 		font: normal 0.875rem/1.2 $ff-main-light;
-		color: #333;
+		color: $color-main-p;
     }
 
     &--green {
-    	background: #005f27;
+    	background: $color-green;
     	color: #fff;
 
     	p,

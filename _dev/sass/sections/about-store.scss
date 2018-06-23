@@ -4,7 +4,7 @@
 
 	&__inner {
 		padding: 20px 20px;
-		border: 2px solid #d2b467;
+		border: 2px solid $color-main-border;
 		border-radius: 20px;
 		background: #fff;
 	}
@@ -20,7 +20,7 @@
 		flex-basis: auto;
 		width: 50%;
 		padding: 15px;
-		border: 2px solid #d2b467;
+		border: 2px solid $color-main-border;
 		border-radius: 10px;
 	}
 
@@ -32,7 +32,7 @@
 	&__advantages {
 		position: relative;
 		margin-left: 15px;
-		background: #005f27;
+		background: $color-green-main;
 		color: #fff;
 
 		&:before {
@@ -43,7 +43,7 @@
 			width: 0;
 			height: 0;
 			border-top: 30px solid transparent;
-			border-right: 15px solid #d2b467;
+			border-right: 15px solid $color-main-border;
 			border-bottom: 30px solid transparent;
 			transform: translateY(-50%);
 		}

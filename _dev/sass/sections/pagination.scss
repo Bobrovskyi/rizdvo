@@ -1,0 +1,112 @@
+.pagination {
+	margin-top: 15px;
+	padding: 20px 0;
+	border-top: 1px solid #fff;
+	// border-radius: 20px;
+	// background: rgba(26, 163, 82, 1);
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+    &__list {
+    	@include unstyled-list;
+    }
+
+    &__item {
+    	display: inline-block;
+    	height: 35px;
+    	width: 35px;
+    	margin-right: 10px;
+    	font: normal 0.875rem/35px $ff-main-bold;
+    	color: #fff;
+    	text-align: center;
+    	vertical-align: middle;
+    	white-space: nowrap;
+    	border: 1px solid #fff;
+    	border-radius: 3px;
+    	background: rgba(0,0,0,0.4);
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 1px rgba(0,0,0,0.22);
+    	cursor: pointer;
+    	transition: .3s linear;
+
+    	&--previous,
+    	&--next {
+    		position: relative;
+    		width: auto;
+    		padding: 0 15px;
+
+    		&:before {
+    			content: "";
+    			position: absolute;
+    			top: 50%;
+    			font-size: 0.625rem;
+    			font-family: "FontAwesome";
+    			transform: translateY(-50%);
+    		}
+    	}
+
+    	&--previous {
+    		padding-left: 25px;
+
+    		&:before {
+    			content: "\f053";
+    			left: 10px;
+    		}
+    	}
+
+    	&--next {
+    		padding-right: 25px;
+
+    		&:before {
+    			content: "\f054";
+    			right: 10px;
+    		}
+    	}
+
+    	&--current {
+    		background: rgba(0, 0, 0, 1);
+    	}
+
+    	a {
+    		display: block;
+    		color: #fff;
+    	}
+
+    	&:last-child {
+    		margin-right: 0;
+    	}
+
+    	&:hover {
+    		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.32) 0px 3px 2px;
+    		background: rgba(0, 0, 0, 0.6);
+    	}
+
+    	&--disabled {
+    		font-family: $ff-main-light;
+    		background: rgba(255, 255, 255, 0.3);
+    		cursor: not-allowed;
+
+    		a {
+    			cursor: not-allowed;
+    		}
+
+	    	&:hover {
+	    		background: rgba(255, 255, 255, 0.3);
+	    	}
+    	}
+
+    }
+
+}
+
+.product-count {
+	margin: 0;
+	padding: 5px 0;
+	font: normal 0.875rem/1.3 $ff-main;
+	color: #fff;
+}

@@ -7,13 +7,13 @@
 		margin: 0;
 		padding-bottom: 10px;
 		font: normal 1rem/1.3 $ff-main-bold;
-		color: #333;
+		color: $color-main-p;
 
 		.fa {
 			display: inline-block;
 			margin-right: 10px;
 			font-size: 1rem;
-			color: rgba(234, 38, 36, 1);
+			color: $color-red-main-light;
 			vertical-align: top;
 		}
 	}

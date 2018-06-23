@@ -31,7 +31,7 @@
             display: flex;
             padding: 15px 20px;
             background: #fff;
-            border: 2px solid #d2b467;
+            border: 2px solid $color-main-border;
             border-radius: 10px;
         }
 
@@ -40,7 +40,7 @@
             width: 0;
             width: 50%;
             padding-right: 10px;
-            border-right: 1px dashed #d2b467;
+            border-right: 1px dashed $color-main-border;
             overflow: hidden;
             transition: .5s linear;
         }
@@ -74,7 +74,7 @@
         a {
             display: block;
             font-family: $ff-main-bold;
-            color: #333;
+            color: $color-navy;
         }
     }
 
@@ -84,7 +84,7 @@
         padding: 15px 0;
         padding-left: 42px;
         font: normal 1.125rem/1.4 $ff-main-bold;
-        color: #333;
+        color: $color-navy;
         text-transform: capitalize;
 
         &:before {
@@ -106,13 +106,13 @@
     &__date {
         padding: 5px 0;
         font: normal 0.875rem/1.4 $ff-main-light;
-        color: #333;
+        color: $color-main-p;
     }
 
     &__comment {
         padding: 15px 0 0;
         font: normal 1rem/1.4 $ff-main;
-        color: #333;
+        color: $color-main-p;
     }
 
     &__image-wrap {
@@ -129,7 +129,7 @@
         display: block;
         padding: 10px 0 0;
         font: normal 1rem/1.4 $ff-main-bold;
-        color: #333;
+        color: $color-navy;
         text-align: center;
     }
 

@@ -16,7 +16,7 @@
 		flex-basis: auto;
 		width: 49%;
 	    padding: 20px 20px;
-	    border: 2px solid #d2b467;
+	    border: 2px solid $color-main-border;
 	    border-radius: 20px;
 	    background: #fff;
 	    text-align: center;
@@ -27,8 +27,8 @@
 		margin: 0 0 20px;
 		padding-bottom: 10px;
 		font: normal 1.75rem/1.2 $ff-heading;
-		color: #ea2624;
-		border-bottom: 1px solid #1aa352;
+		color: $color-red-main-light;
+		border-bottom: 1px solid $color-green-light;
 	}
 
 	&__label {
@@ -36,7 +36,7 @@
 		padding: 25px 0;
 		display: block;
 		font: normal 0.875rem/1.2 $ff-main-bold;
-		color: #333;
+		color: $color-main-p;
 		letter-spacing: .1em;
 		text-transform: uppercase;
 	}
@@ -64,14 +64,14 @@
 		font: normal 1.125rem/1.2 $ff-main;
 
 		a {
-			color: #ea2624;
+			color: $color-red;
 			display: inline-block;
-			border-bottom: 1px solid #ea2624;
+			border-bottom: 1px solid $color-red;
 
 			&:hover {
-				color: #1aa352;
+				color: $color-green;
 				letter-spacing: .03em;
-				border-color: #1aa352;
+				border-color: $color-green;
 			}
 		}
 	}

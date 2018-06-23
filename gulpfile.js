@@ -39,7 +39,8 @@ gulp.task('templates:compile', function buildHTML() {
     '_dev/templates/blog.pug',
     '_dev/templates/blog-post.pug',
     '_dev/templates/authentication.pug',
-    '_dev/templates/password-recovery.pug'
+    '_dev/templates/password-recovery.pug',
+    '_dev/templates/cms.pug'
   ])
   .pipe(pug({
     pretty: true

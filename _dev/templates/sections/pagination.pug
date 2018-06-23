@@ -1,0 +1,22 @@
+.pagination
+    .pagination__inner
+        p.product-count Показано 13 - 20 из 20 товаров
+        ul.pagination__list
+            li.pagination__item.pagination__item--previous.pagination__item--disabled
+                a(href="#" rel="prev") Назад
+            li.pagination__item.pagination__item--current
+                span 1
+            li.pagination__item
+                a(href="#") 2
+            li.pagination__item.pagination__item--truncate
+                i.fa.fa-ellipsis-h(aria-hidden="true")
+            li.pagination__item
+                a(href="#") 5
+            li.pagination__item.pagination__item--next
+                a(href="#" rel="next") Вперед
+
+        form.pagination__form(action="#" method="get")
+            input(type="hidden" name="search_query" value="")
+            input(type="hidden" name="tag" value="")
+            button.btn.btn--green.btn-showall(type="submit") Показать все
+            input(type="hidden" name="" value="")
