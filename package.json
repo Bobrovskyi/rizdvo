@@ -27,6 +27,8 @@
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgo": "^1.5.4",
     "gulp.spritesmith": "^6.9.0",
     "rimraf": "^2.6.2",
     "vinyl-ftp": "^0.6.1"

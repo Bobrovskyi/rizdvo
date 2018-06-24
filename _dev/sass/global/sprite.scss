@@ -1,0 +1,288 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$bests-1-name: 'bests-1';
+$bests-1-x: 265px;
+$bests-1-y: 1244px;
+$bests-1-offset-x: -265px;
+$bests-1-offset-y: -1244px;
+$bests-1-width: 265px;
+$bests-1-height: 287px;
+$bests-1-total-width: 2005px;
+$bests-1-total-height: 1531px;
+$bests-1-image: '../img/sprite.png';
+$bests-1: (265px, 1244px, -265px, -1244px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-1', );
+$bests-2-name: 'bests-2';
+$bests-2-x: 795px;
+$bests-2-y: 1244px;
+$bests-2-offset-x: -795px;
+$bests-2-offset-y: -1244px;
+$bests-2-width: 265px;
+$bests-2-height: 287px;
+$bests-2-total-width: 2005px;
+$bests-2-total-height: 1531px;
+$bests-2-image: '../img/sprite.png';
+$bests-2: (795px, 1244px, -795px, -1244px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-2', );
+$bests-3-name: 'bests-3';
+$bests-3-x: 1060px;
+$bests-3-y: 1244px;
+$bests-3-offset-x: -1060px;
+$bests-3-offset-y: -1244px;
+$bests-3-width: 265px;
+$bests-3-height: 287px;
+$bests-3-total-width: 2005px;
+$bests-3-total-height: 1531px;
+$bests-3-image: '../img/sprite.png';
+$bests-3: (1060px, 1244px, -1060px, -1244px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-3', );
+$bests-4-name: 'bests-4';
+$bests-4-x: 1325px;
+$bests-4-y: 1244px;
+$bests-4-offset-x: -1325px;
+$bests-4-offset-y: -1244px;
+$bests-4-width: 265px;
+$bests-4-height: 287px;
+$bests-4-total-width: 2005px;
+$bests-4-total-height: 1531px;
+$bests-4-image: '../img/sprite.png';
+$bests-4: (1325px, 1244px, -1325px, -1244px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-4', );
+$bests-5-name: 'bests-5';
+$bests-5-x: 530px;
+$bests-5-y: 1244px;
+$bests-5-offset-x: -530px;
+$bests-5-offset-y: -1244px;
+$bests-5-width: 265px;
+$bests-5-height: 287px;
+$bests-5-total-width: 2005px;
+$bests-5-total-height: 1531px;
+$bests-5-image: '../img/sprite.png';
+$bests-5: (530px, 1244px, -530px, -1244px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-5', );
+$bests-6-name: 'bests-6';
+$bests-6-x: 1740px;
+$bests-6-y: 0px;
+$bests-6-offset-x: -1740px;
+$bests-6-offset-y: 0px;
+$bests-6-width: 265px;
+$bests-6-height: 287px;
+$bests-6-total-width: 2005px;
+$bests-6-total-height: 1531px;
+$bests-6-image: '../img/sprite.png';
+$bests-6: (1740px, 0px, -1740px, 0px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-6', );
+$bests-7-name: 'bests-7';
+$bests-7-x: 0px;
+$bests-7-y: 1244px;
+$bests-7-offset-x: 0px;
+$bests-7-offset-y: -1244px;
+$bests-7-width: 265px;
+$bests-7-height: 287px;
+$bests-7-total-width: 2005px;
+$bests-7-total-height: 1531px;
+$bests-7-image: '../img/sprite.png';
+$bests-7: (0px, 1244px, 0px, -1244px, 265px, 287px, 2005px, 1531px, '../img/sprite.png', 'bests-7', );
+$bg-snow-name: 'bg-snow';
+$bg-snow-x: 750px;
+$bg-snow-y: 0px;
+$bg-snow-offset-x: -750px;
+$bg-snow-offset-y: 0px;
+$bg-snow-width: 630px;
+$bg-snow-height: 598px;
+$bg-snow-total-width: 2005px;
+$bg-snow-total-height: 1531px;
+$bg-snow-image: '../img/sprite.png';
+$bg-snow: (750px, 0px, -750px, 0px, 630px, 598px, 2005px, 1531px, '../img/sprite.png', 'bg-snow', );
+$bg-gifts-name: 'bg_gifts';
+$bg-gifts-x: 750px;
+$bg-gifts-y: 598px;
+$bg-gifts-offset-x: -750px;
+$bg-gifts-offset-y: -598px;
+$bg-gifts-width: 500px;
+$bg-gifts-height: 500px;
+$bg-gifts-total-width: 2005px;
+$bg-gifts-total-height: 1531px;
+$bg-gifts-image: '../img/sprite.png';
+$bg-gifts: (750px, 598px, -750px, -598px, 500px, 500px, 2005px, 1531px, '../img/sprite.png', 'bg_gifts', );
+$christmas-tree-name: 'christmas_tree';
+$christmas-tree-x: 0px;
+$christmas-tree-y: 0px;
+$christmas-tree-offset-x: 0px;
+$christmas-tree-offset-y: 0px;
+$christmas-tree-width: 750px;
+$christmas-tree-height: 1244px;
+$christmas-tree-total-width: 2005px;
+$christmas-tree-total-height: 1531px;
+$christmas-tree-image: '../img/sprite.png';
+$christmas-tree: (0px, 0px, 0px, 0px, 750px, 1244px, 2005px, 1531px, '../img/sprite.png', 'christmas_tree', );
+$features-ico-1-name: 'features_ico_1';
+$features-ico-1-x: 1740px;
+$features-ico-1-y: 477px;
+$features-ico-1-offset-x: -1740px;
+$features-ico-1-offset-y: -477px;
+$features-ico-1-width: 95px;
+$features-ico-1-height: 95px;
+$features-ico-1-total-width: 2005px;
+$features-ico-1-total-height: 1531px;
+$features-ico-1-image: '../img/sprite.png';
+$features-ico-1: (1740px, 477px, -1740px, -477px, 95px, 95px, 2005px, 1531px, '../img/sprite.png', 'features_ico_1', );
+$features-ico-2-name: 'features_ico_2';
+$features-ico-2-x: 1835px;
+$features-ico-2-y: 382px;
+$features-ico-2-offset-x: -1835px;
+$features-ico-2-offset-y: -382px;
+$features-ico-2-width: 95px;
+$features-ico-2-height: 95px;
+$features-ico-2-total-width: 2005px;
+$features-ico-2-total-height: 1531px;
+$features-ico-2-image: '../img/sprite.png';
+$features-ico-2: (1835px, 382px, -1835px, -382px, 95px, 95px, 2005px, 1531px, '../img/sprite.png', 'features_ico_2', );
+$features-ico-3-name: 'features_ico_3';
+$features-ico-3-x: 1835px;
+$features-ico-3-y: 477px;
+$features-ico-3-offset-x: -1835px;
+$features-ico-3-offset-y: -477px;
+$features-ico-3-width: 95px;
+$features-ico-3-height: 95px;
+$features-ico-3-total-width: 2005px;
+$features-ico-3-total-height: 1531px;
+$features-ico-3-image: '../img/sprite.png';
+$features-ico-3: (1835px, 477px, -1835px, -477px, 95px, 95px, 2005px, 1531px, '../img/sprite.png', 'features_ico_3', );
+$features-ico-4-name: 'features_ico_4';
+$features-ico-4-x: 1740px;
+$features-ico-4-y: 287px;
+$features-ico-4-offset-x: -1740px;
+$features-ico-4-offset-y: -287px;
+$features-ico-4-width: 95px;
+$features-ico-4-height: 95px;
+$features-ico-4-total-width: 2005px;
+$features-ico-4-total-height: 1531px;
+$features-ico-4-image: '../img/sprite.png';
+$features-ico-4: (1740px, 287px, -1740px, -287px, 95px, 95px, 2005px, 1531px, '../img/sprite.png', 'features_ico_4', );
+$features-ico-5-name: 'features_ico_5';
+$features-ico-5-x: 1835px;
+$features-ico-5-y: 287px;
+$features-ico-5-offset-x: -1835px;
+$features-ico-5-offset-y: -287px;
+$features-ico-5-width: 95px;
+$features-ico-5-height: 95px;
+$features-ico-5-total-width: 2005px;
+$features-ico-5-total-height: 1531px;
+$features-ico-5-image: '../img/sprite.png';
+$features-ico-5: (1835px, 287px, -1835px, -287px, 95px, 95px, 2005px, 1531px, '../img/sprite.png', 'features_ico_5', );
+$features-ico-6-name: 'features_ico_6';
+$features-ico-6-x: 1740px;
+$features-ico-6-y: 382px;
+$features-ico-6-offset-x: -1740px;
+$features-ico-6-offset-y: -382px;
+$features-ico-6-width: 95px;
+$features-ico-6-height: 95px;
+$features-ico-6-total-width: 2005px;
+$features-ico-6-total-height: 1531px;
+$features-ico-6-image: '../img/sprite.png';
+$features-ico-6: (1740px, 382px, -1740px, -382px, 95px, 95px, 2005px, 1531px, '../img/sprite.png', 'features_ico_6', );
+$tree-1-name: 'tree-1';
+$tree-1-x: 1380px;
+$tree-1-y: 0px;
+$tree-1-offset-x: -1380px;
+$tree-1-offset-y: 0px;
+$tree-1-width: 360px;
+$tree-1-height: 352px;
+$tree-1-total-width: 2005px;
+$tree-1-total-height: 1531px;
+$tree-1-image: '../img/sprite.png';
+$tree-1: (1380px, 0px, -1380px, 0px, 360px, 352px, 2005px, 1531px, '../img/sprite.png', 'tree-1', );
+$tree-2-name: 'tree-2';
+$tree-2-x: 1380px;
+$tree-2-y: 704px;
+$tree-2-offset-x: -1380px;
+$tree-2-offset-y: -704px;
+$tree-2-width: 360px;
+$tree-2-height: 352px;
+$tree-2-total-width: 2005px;
+$tree-2-total-height: 1531px;
+$tree-2-image: '../img/sprite.png';
+$tree-2: (1380px, 704px, -1380px, -704px, 360px, 352px, 2005px, 1531px, '../img/sprite.png', 'tree-2', );
+$tree-3-name: 'tree-3';
+$tree-3-x: 1380px;
+$tree-3-y: 352px;
+$tree-3-offset-x: -1380px;
+$tree-3-offset-y: -352px;
+$tree-3-width: 360px;
+$tree-3-height: 352px;
+$tree-3-total-width: 2005px;
+$tree-3-total-height: 1531px;
+$tree-3-image: '../img/sprite.png';
+$tree-3: (1380px, 352px, -1380px, -352px, 360px, 352px, 2005px, 1531px, '../img/sprite.png', 'tree-3', );
+$spritesheet-width: 2005px;
+$spritesheet-height: 1531px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($bests-1, $bests-2, $bests-3, $bests-4, $bests-5, $bests-6, $bests-7, $bg-snow, $bg-gifts, $christmas-tree, $features-ico-1, $features-ico-2, $features-ico-3, $features-ico-4, $features-ico-5, $features-ico-6, $tree-1, $tree-2, $tree-3, );
+$spritesheet: (2005px, 1531px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

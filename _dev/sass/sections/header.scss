@@ -41,7 +41,7 @@
 	}
 
 	&__bottom {
-		padding: 20px 0;
+		padding: 10px 0 0;
 
 		&-inner {
 			display: flex;
@@ -344,8 +344,8 @@
 }
 
 .search {
-
 	margin-left: auto;
+	padding: 10px 0;
 
 	&__form {
 		position: relative;
